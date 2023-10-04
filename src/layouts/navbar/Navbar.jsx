@@ -53,7 +53,7 @@ const Navbar = () => {
                         placeholder="Search for Products, Brands and More"
                     />
                 </div>
-            </div>
+            </div>  
         </div>
     );
 };
