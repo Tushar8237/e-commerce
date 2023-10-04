@@ -7,7 +7,7 @@
 .category_section {
     margin: 0 auto;
     max-width: $page-width-xl;
-    padding: 3rem 10rem;
+    padding: 3rem 3rem;
     display: flex;
     gap: 2rem;
     justify-content: center;
@@ -38,7 +38,20 @@
             text-align: center;
             font-size: 1.2rem;
             margin-top: 1rem;
+            color: black;
+            font-weight: 600;
         }
+    }
+}
+
+.category_section::-webkit-scrollbar {
+    display: none;
+}
+
+@media screen and (max-width: 998px) and (min-width: 576px) {
+    .category_section {
+        padding: 2rem;
+        justify-content: flex-start;
     }
 }
 

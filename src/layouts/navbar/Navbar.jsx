@@ -7,12 +7,15 @@ import {
     faUser,
     faSearch,
 } from "@fortawesome/free-solid-svg-icons";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
     return (
         <div className="wrapper">
             <div className="section">
-                <img src={logo} alt="Shop India" />
+                <Link to="/">
+                    <img src={logo} alt="Shop India" />
+                </Link>
                 <div className="nav_search">
                     <FontAwesomeIcon icon={faSearch} className="search_icon" />
                     <input
@@ -21,28 +24,35 @@ const Navbar = () => {
                         placeholder="Search for Products, Brands and More"
                     />
                 </div>
-                <a href="/sign-in">
-                    <FontAwesomeIcon icon={faUser} className="icons" />
-                    Sign in
-                </a>
-                <a href="/cart">
-                    <FontAwesomeIcon icon={faShoppingCart} className="icons" />
-                    Cart
-                </a>
+
+                <div className="navCart">
+                    <Link to="/login">
+                        <FontAwesomeIcon icon={faUser} className="icons" />
+                        Sign in
+                    </Link>
+
+                    <Link to="/cart">
+                        <FontAwesomeIcon icon={faShoppingCart} className="icons" />
+                        Cart
+                    </Link>
+                </div>
             </div>
 
             <div className="mobile_Section">
                 <div>
-                    <img src={logo} alt="Shop India" />
+                    <Link to="/">
+                        <img src={logo} alt="Shop India" />
+                    </Link>
 
-                    <a href="/sign-in">
+                    <Link to="/login" className="navMobile_link">
                         <FontAwesomeIcon icon={faUser} className="icons" />
                         Sign in
-                    </a>
-                    <a href="/cart">
+                    </Link>
+
+                    <Link to="/cart" className="navMobile_link">
                         <FontAwesomeIcon icon={faShoppingCart} className="icons" />
                         Cart
-                    </a>
+                    </Link>
                 </div>
 
                 <div className="nav_search">
@@ -53,7 +63,7 @@ const Navbar = () => {
                         placeholder="Search for Products, Brands and More"
                     />
                 </div>
-            </div>  
+            </div>
         </div>
     );
 };
