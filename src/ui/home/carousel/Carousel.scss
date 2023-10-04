@@ -1,0 +1,39 @@
+@import "../../../scss/base";
+
+
+.carousel_wrapper {
+    padding: 0 0;
+}
+
+.carousel_section {
+    margin: 0 auto;
+    max-width: $page-width-xl;
+    padding: 2rem 1rem;
+}
+
+@media screen and (max-width: 998px) and (min-width: 576px) {
+    .carousel_section {
+        padding: 1rem 0.5rem;
+    }
+    .carousel_img {
+
+        img {
+            width: 100%;
+        }
+    }
+}
+
+
+
+@media screen and (max-width: 576px) and (min-width: 00px) {
+    .carousel_section {
+        padding: 0rem 0.5rem;
+    }
+
+    .carousel_img {
+
+        img {
+            width: 100%;
+        }
+    }
+}  
