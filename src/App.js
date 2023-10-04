@@ -1,11 +1,12 @@
 import './App.css';
+import Navbar from './layouts/navbar/Navbar';
 
 function App() {
   return (
     <div>
-      e commerce app
+      <Navbar />
     </div>
-  );
+  );  
 }
 
-export default App;
+export default App;  
