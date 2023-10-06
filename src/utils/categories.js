@@ -20,6 +20,23 @@ import img13 from '../assets/carousel-img/img6.webp'
 import img14 from '../assets/carousel-img/img7.webp'
 import img15 from '../assets/carousel-img/img8.webp'
 
+// product img 
+
+// import img17 from "../assets/product-img/img1.webp"
+// import img18 from "../assets/product-img/img2.webp"
+// import img19 from "../assets/product-img/img3.webp"
+// import img20 from "../assets/product-img/img4.webp"
+// import img21 from "../assets/product-img/img5.webp"
+
+import img17 from "../assets/product-img/iphone1.webp"
+import img18 from "../assets/product-img/iphone2.webp"
+import img19 from "../assets/product-img/iphone3.webp"
+import img20 from "../assets/product-img/iphone4.webp"
+import img21 from "../assets/product-img/iphone5.webp"
+import img22 from "../assets/product-img/iphone6.webp"
+
+
+
 
 
 
@@ -101,10 +118,41 @@ const carouselImg = [
     },
 ]
 
+const productImg = [
+    {
+        id : 1,
+        img : img17,
+    },
+    {
+        id : 2,
+        img : img18,
+    },
+    {
+        id : 3,
+        img : img19,
+    },
+    {
+        id : 4,
+        img : img20,
+    },
+    {
+        id : 5,
+        img : img21,
+    },
+    {
+        id : 5,
+        img : img22,
+    },
+]
+
 export const getCategories = () => {
     return category
 }
 
 export const getCarouselImg = () => {
     return carouselImg
+}
+
+export const getProductImg = () => {
+    return productImg
 }
