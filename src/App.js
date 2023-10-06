@@ -3,7 +3,9 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Navbar from "./layouts/navbar/Navbar";
 import Login from "./ui/pages/login/Login";
 import Cart from "./ui/pages/cart/Cart";
-import Home from "./ui/home/home-page/Home";
+import Home from "./ui/home/Home";
+import SingleProduct from "./ui/pages/product/SingleProduct";
+
 
 function App() {
   return (
@@ -14,6 +16,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/login" element={<Login />} />
           <Route path="/cart" element={<Cart />} />
+          <Route path="/single-product" element={<SingleProduct />} />
         </Routes>
       </Router>
     </div>
