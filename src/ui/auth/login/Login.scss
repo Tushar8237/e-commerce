@@ -1,0 +1,94 @@
+@import "../../../scss/base";
+
+.login_wrapper {
+    padding: 0 0;
+}
+
+.login_section {
+    margin: 0 auto;
+    max-width: $page-width-xl;
+    padding: 3rem 0.5rem 0 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    
+    .login_form {
+        height: 520px;
+        width: 400px;
+        background-color: rgba(255,255,255,0.13);
+        border-radius: 10px;
+        backdrop-filter: blur(10px);
+        border: 2px solid rgba(255,255,255,0.1);
+        box-shadow: 0 0 40px rgba(8,7,16,0.6);
+        padding: 50px 35px;
+
+        h3{
+            font-size: 32px;
+            font-weight: 500;
+            line-height: 42px;
+            text-align: center;
+            color: $grey;
+        }
+
+        .login_button{
+            margin-top: 30px;
+            width: 100%;
+            background: #2874f0;
+            color: $white;
+            padding: 15px 0;
+            font-size: 18px;
+            font-weight: 600;
+            border-radius: 5px;
+            cursor: pointer;
+            border: none;
+        }
+
+        .login_social{
+            margin-top: 26px;
+            display: flex;
+
+
+            div {
+                background: red;
+                width: 150px;
+                border-radius: 3px;
+                padding: 5px 10px 10px 5px;
+                background-color: rgba(255,255,255,0.27);
+                color: $grey;
+                text-align: center;
+                border: 1px solid $grey;
+                font-weight: 600;
+            }
+            
+            .login_facebook {
+                margin-left: 25px;
+            }
+        }
+
+        p {
+            color: $grey;
+            margin-top: 20px;
+            margin-left: 4px;
+
+            span {
+                a {
+                    color: #2874f0;
+                    font-weight: 600;
+                }
+            }
+        }
+
+        .login_social div:hover{
+            background-color: rgba(255,255,255,0.47);
+        }
+          
+    }
+
+    .login_form{
+        color: #ffffff;
+        letter-spacing: 0.5px;
+        outline: none;
+        border: none;
+    }
+}
